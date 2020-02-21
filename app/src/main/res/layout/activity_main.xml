@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentLeft = "true"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentRight = "true"
+        android:layout_alignParentBottom = "true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="252dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal = "true"
+        android:layout_alignTop="@id/imageView"
+        android:layout_marginTop="21dp"
+        android:textSize="30dp"
+        android:textColor="@color/colorWhite"
+        android:text="Hiker's watch" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignTop="@id/title"
+        android:layout_marginTop="72dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Latitude:" />
+
+    <TextView
+        android:id="@+id/longtitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignTop="@id/latitude"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Longtitude:" />
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignTop="@id/longtitude"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Accuracy:" />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignTop="@id/accuracy"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Altitude:" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft = "true"
+        android:layout_alignTop="@id/altitude"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="Address:" />
+
+
+
+
+
+
+
+</android.widget.RelativeLayout>
